@@ -4,6 +4,7 @@ $(function(){
 	$(document).keyup(function(e) {
 		 if(e.keyCode == 39 || e.keyCode == 40 || e.keyCode == 32) next();
 		 else if(e.keyCode == 37 || e.keyCode == 38) back();
+		 else if(e.keyCode == 87) $('.slides').fadeToggle();
 	});
 	
 	$('.slides').swipe({
